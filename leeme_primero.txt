@@ -1,0 +1,15 @@
+Plataforma Rootthebox con retos creados de crypto, hashing, forensics,... a partir del curso Aprendizaje Basado en Projectos  
+Para instal·lar la plataforma seguir las instrucciones de : 
+https://github.com/moloch--/RootTheBox/wiki/Installation (instalando como motor de la BBDD mysql)
+A continuación importar el dump de la base de datos adjunto al proyecto: rootthebox_dump.sql
+
+""""
+mysql -u usuario_creado_en_instalación -p rootthebox < rootthebox_dump.sql
+"""" 
+Para arrancar el proyecto:
+
+#Desde la carpeta donde clonaste rootthebox
+python3 rootthebox.py --start
+#conectar desde navegador
+http://localhost:8888 (usuario: admin, contrasenya: Camidemar#@)
+#No olvides cambiar el usuario de conexión a la BBDD por el que creaste durante la instalación de rootthebox (Fichero: ./files/rootthebox.cfg)
